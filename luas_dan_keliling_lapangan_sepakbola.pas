@@ -1,4 +1,4 @@
-program luas_dan_keliling_lapangan_sepakbola;
+program LuasDanKelilingLapanganSepakbola;
 uses crt;
 var
    panjang, lebar, luas, keliling: real;
@@ -18,4 +18,5 @@ clrscr;
    writeln('Luas lapangan        : ',luas :0:0, ' meter'  );
    writeln('Keliling lapangan    : ',keliling :0:0, ' meter'  );
    
+
 end.
