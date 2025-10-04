@@ -18,11 +18,12 @@ clrscr;
    readln(hari_tidak_bekerja);
 
    gaji_lembur := 150000 * hari_lembur;
-   potongan_gaji := -30000 * hari_tidak_bekerja;
+   potongan_gaji := 30000 * hari_tidak_bekerja;
    gaji_total := gaji_pokok + gaji_lembur - potongan_gaji;
 
    TextColor(Yellow);
    writeln('========================================');
    writeln('Gaji total              : ', gaji_total :0:0);
   
+
 end.
