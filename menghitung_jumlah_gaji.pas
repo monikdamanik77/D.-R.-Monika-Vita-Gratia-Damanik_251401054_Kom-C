@@ -1,9 +1,9 @@
-program menghitung_jumlah_gaji;
+program MenghitungJumlahGaji;
 uses crt;
 var 
    nama: string;
-   hari_lembur, hari_tidak_bekerja: integer;
-   gaji_pokok, gaji_lembur, potongan_gaji, gaji_total: real;
+   HariLembur, HariTidakBekerja: integer;
+   GajiPokok, GajiLembur, PotonganGaji, GajiTotal: real;
 
 begin
 clrscr;
@@ -11,19 +11,20 @@ clrscr;
    write('Nama karyawan           : ');
    readln(nama);
    write('Gaji pokok              : ');
-   readln(gaji_pokok);
+   readln(GajiPokok);
    write('Lembur (hari)           : ');
-   readln(hari_lembur);
+   readln(HariLembur);
    write('Tidak Bekerja (hari)    : ');
-   readln(hari_tidak_bekerja);
+   readln(HariTidakBekerja);
 
-   gaji_lembur := 150000 * hari_lembur;
-   potongan_gaji := 30000 * hari_tidak_bekerja;
-   gaji_total := gaji_pokok + gaji_lembur - potongan_gaji;
+   GajiLembur := 150000 * HariLembur;
+   PotonganGaji := 30000 * HariTidakBekerja;
+   GajiTotal := GajiPokok + GajiLembur - PotonganGaji;
 
    TextColor(Yellow);
    writeln('========================================');
-   writeln('Gaji total              : ', gaji_total :0:0);
+   writeln('Gaji total              : ', GajiTotal :0:0);
   
 
 end.
+
