@@ -1,28 +1,29 @@
-program nilai_akhir_mahasiswa;
+program NilaiAkhirMahasiswa;
 uses crt;
 var 
    nama: string;
-   nilai_keaktifan, nilai_tugas, nilai_ujian: integer; 
-   nilai_murni_keaktifan, nilai_murni_tugas, nilai_murni_ujian, nilai_akhir: real;
+   NilaiKeaktifan, NilaiTugas, NilaiUjian: integer; 
+   NilaiMurniKeaktifan, NilaiMurniTugas, NilaiMurniUjian, NilaiAkhir: real;
 begin
 clrscr;
    textcolor(LightBlue);
    write('Nama Mahasiswa    : ');
    readln(nama);
    write('Nilai Keaktifan   : ');
-   readln(nilai_keaktifan);
+   readln(NilaiKeaktifan);
    write('Nilai Tugas       : ');
-   readln(nilai_tugas);
+   readln(NilaiTugas);
    write('Nilai Ujian       : ');
-   readln(nilai_ujian);
+   readln(NilaiUjian);
 
-   nilai_murni_keaktifan := nilai_keaktifan * 0.2;
-   nilai_murni_tugas := nilai_tugas * 0.35;
-   nilai_murni_ujian := nilai_ujian * 0.45;
-   nilai_akhir := nilai_murni_keaktifan + nilai_murni_tugas + nilai_murni_ujian;
+   NilaiMurniKeaktifan := NilaiKeaktifan * 0.2;
+   NilaiMurniTugas := NilaiTugas * 0.35;
+   NilaiMurniUjian := NilaiUjian * 0.45;
+   nilai_akhir := NilaiMurniKeaktifan + NilaiMurniTugas + NilaiMurniUjian;
 
    textcolor(cyan);
    writeln('===================================');
-   writeln('Nilai akhir       : ', nilai_akhir :0:0);
+   writeln('Nilai akhir       : ', NilaiAkhir :0:0);
+
 
 end.
